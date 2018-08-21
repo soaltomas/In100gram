@@ -7,7 +7,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow()
+        
+        let firstViewController: UIViewController
+        
+        if Credential.isUserAuthenticated {
+            let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
+            firstViewController = mainViewController
+        } else {
+            guard let authController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthViewController") as? AuthViewController else {
+                return false
+            }
+            authController.delegate = self
+            firstViewController = authController
+        }
+        
+        self.window?.rootViewController = firstViewController
+        self.window?.makeKeyAndVisible()
         return true
     }
 
@@ -34,5 +50,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+extension AppDelegate: AuthViewControllerDelegate {
+    func authViewController(_ viewController: UIViewController, authorizedWith token: String?) {
+        Credential.accessToken = token
+        let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
+        viewController.present(mainViewController, animated: true, completion: nil)
+    }
 }
 

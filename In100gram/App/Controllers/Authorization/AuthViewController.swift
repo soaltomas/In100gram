@@ -6,7 +6,7 @@ class AuthViewController: UIViewController {
     let clientId = "24de0079c65146c3a0bb00cae115b4b0"
     let redirectURI = "https://instagram.com"
     
-    weak var delegate: AuthViewControllerDelegate?
+    var router: AbstractAuthRouter!
 
     @IBOutlet weak var wkWebView: WKWebView!
     
@@ -54,7 +54,8 @@ extension AuthViewController: WKNavigationDelegate {
         }
         
         let accessToken = urlString.components(separatedBy: "#access_token=").last!
-        self.delegate?.authViewController(self, authorizedWith: accessToken)
+        Credential.accessToken = accessToken
+        router.navigateAuthSuccess()
         
         decisionHandler(.cancel)
         

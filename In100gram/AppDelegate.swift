@@ -10,18 +10,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow()
         
         let firstViewController: UIViewController
-        
+
         if Credential.isUserAuthenticated {
-            let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
-            firstViewController = mainViewController
+            let userViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserViewController")
+            firstViewController = userViewController
         } else {
-            guard let authController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthViewController") as? AuthViewController else {
-                return false
-            }
-            authController.delegate = self
-            firstViewController = authController
+            let builder = AuthBuilder()
+            firstViewController = builder.viewController()
         }
-        
+
         self.window?.rootViewController = firstViewController
         self.window?.makeKeyAndVisible()
         return true
@@ -50,13 +47,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
-
-extension AppDelegate: AuthViewControllerDelegate {
-    func authViewController(_ viewController: UIViewController, authorizedWith token: String?) {
-        Credential.accessToken = token
-        let mainViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainViewController")
-        viewController.present(mainViewController, animated: true, completion: nil)
-    }
 }
 

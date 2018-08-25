@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		280FE133FF22D5801D4DB55C /* Pods_In100gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB568D2805C2B396160BADB7 /* Pods_In100gram.framework */; };
 		C31DFCE421298708008DC572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DFCE321298708008DC572 /* AppDelegate.swift */; };
-		C31DFCE621298708008DC572 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DFCE521298708008DC572 /* MainViewController.swift */; };
+		C31DFCE621298708008DC572 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DFCE521298708008DC572 /* UserViewController.swift */; };
 		C31DFCE921298708008DC572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31DFCE721298708008DC572 /* Main.storyboard */; };
 		C31DFCEB21298709008DC572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31DFCEA21298709008DC572 /* Assets.xcassets */; };
 		C31DFCEE21298709008DC572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31DFCEC21298709008DC572 /* LaunchScreen.storyboard */; };
@@ -21,9 +21,12 @@
 		C3B043B0212EF66A00315015 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043AF212EF66A00315015 /* LoginRequest.swift */; };
 		C3B043B2212EF86200315015 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043B1212EF86200315015 /* RequestModel.swift */; };
 		C3B043B4212F53BC00315015 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043B3212F53BC00315015 /* LoginResponse.swift */; };
+		C3B043B82131276100315015 /* AbstractAuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043B72131276100315015 /* AbstractAuthRouter.swift */; };
+		C3B043BA2131291500315015 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043B92131291500315015 /* AuthRouter.swift */; };
+		C3B043BD21312DEB00315015 /* AbstractAuthBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043BC21312DEB00315015 /* AbstractAuthBuilder.swift */; };
+		C3B043BF21312EB800315015 /* AuthBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043BE21312EB800315015 /* AuthBuilder.swift */; };
 		C3B147CB212C22910073972C /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147CA212C22910073972C /* Credential.swift */; };
 		C3B147D1212C304B0073972C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147D0212C304B0073972C /* AuthViewController.swift */; };
-		C3B147D3212C325A0073972C /* AuthViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147D2212C325A0073972C /* AuthViewControllerDelegate.swift */; };
 		C3B147D7212C677B0073972C /* SessionManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147D6212C677B0073972C /* SessionManagerFactory.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +35,7 @@
 		A82AE16E6EF6D795449C6D5A /* Pods-In100gram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In100gram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-In100gram/Pods-In100gram.debug.xcconfig"; sourceTree = "<group>"; };
 		C31DFCE021298708008DC572 /* In100gram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = In100gram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31DFCE321298708008DC572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C31DFCE521298708008DC572 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C31DFCE521298708008DC572 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		C31DFCE821298708008DC572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C31DFCEA21298709008DC572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C31DFCED21298709008DC572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,9 +48,12 @@
 		C3B043AF212EF66A00315015 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		C3B043B1212EF86200315015 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		C3B043B3212F53BC00315015 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		C3B043B72131276100315015 /* AbstractAuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAuthRouter.swift; sourceTree = "<group>"; };
+		C3B043B92131291500315015 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		C3B043BC21312DEB00315015 /* AbstractAuthBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractAuthBuilder.swift; sourceTree = "<group>"; };
+		C3B043BE21312EB800315015 /* AuthBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBuilder.swift; sourceTree = "<group>"; };
 		C3B147CA212C22910073972C /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		C3B147D0212C304B0073972C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		C3B147D2212C325A0073972C /* AuthViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegate.swift; sourceTree = "<group>"; };
 		C3B147D6212C677B0073972C /* SessionManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerFactory.swift; sourceTree = "<group>"; };
 		CB568D2805C2B396160BADB7 /* Pods_In100gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_In100gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +151,34 @@
 			path = Authorization;
 			sourceTree = "<group>";
 		};
+		C3B043B5213126FC00315015 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				C3B043BB21312DA500315015 /* Builder */,
+				C3B043B62131273000315015 /* Router */,
+				C3B147D0212C304B0073972C /* AuthViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		C3B043B62131273000315015 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C3B043B72131276100315015 /* AbstractAuthRouter.swift */,
+				C3B043B92131291500315015 /* AuthRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C3B043BB21312DA500315015 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				C3B043BC21312DEB00315015 /* AbstractAuthBuilder.swift */,
+				C3B043BE21312EB800315015 /* AuthBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		C3B147C9212C22800073972C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,9 +190,8 @@
 		C3B147CF212C302B0073972C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C31DFCE521298708008DC572 /* MainViewController.swift */,
-				C3B147D0212C304B0073972C /* AuthViewController.swift */,
-				C3B147D2212C325A0073972C /* AuthViewControllerDelegate.swift */,
+				C3B043B5213126FC00315015 /* Authorization */,
+				C31DFCE521298708008DC572 /* UserViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,15 +336,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B043AB212E983300315015 /* RequestFactory.swift in Sources */,
+				C3B043BD21312DEB00315015 /* AbstractAuthBuilder.swift in Sources */,
 				C3B043A9212C6C0A00315015 /* AbstractRequestFactory.swift in Sources */,
+				C3B043BF21312EB800315015 /* AuthBuilder.swift in Sources */,
 				C3B043AE212EDF0E00315015 /* AuthRequestFactory.swift in Sources */,
-				C31DFCE621298708008DC572 /* MainViewController.swift in Sources */,
+				C31DFCE621298708008DC572 /* UserViewController.swift in Sources */,
 				C3B043B4212F53BC00315015 /* LoginResponse.swift in Sources */,
 				C31DFCE421298708008DC572 /* AppDelegate.swift in Sources */,
 				C3B147CB212C22910073972C /* Credential.swift in Sources */,
+				C3B043BA2131291500315015 /* AuthRouter.swift in Sources */,
+				C3B043B82131276100315015 /* AbstractAuthRouter.swift in Sources */,
 				C3B147D1212C304B0073972C /* AuthViewController.swift in Sources */,
 				C3B147D7212C677B0073972C /* SessionManagerFactory.swift in Sources */,
-				C3B147D3212C325A0073972C /* AuthViewControllerDelegate.swift in Sources */,
 				C3B043B0212EF66A00315015 /* LoginRequest.swift in Sources */,
 				C3B043B2212EF86200315015 /* RequestModel.swift in Sources */,
 				C31DFCF8212C1ABE008DC572 /* User.swift in Sources */,

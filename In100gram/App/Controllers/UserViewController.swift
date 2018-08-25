@@ -1,6 +1,6 @@
 import UIKit
 
-class MainViewController: UIViewController {
+class UserViewController: UIViewController {
     
     @IBOutlet weak var userNameLabel: UILabel!
     

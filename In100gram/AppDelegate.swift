@@ -8,12 +8,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow()
-        
+
         let firstViewController: UIViewController
 
         if Credential.isUserAuthenticated {
-            let userViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserViewController")
-            firstViewController = userViewController
+            let builder = UserBuilderFactory.getBuilderForDevice(device: UIDevice.current.userInterfaceIdiom)
+            firstViewController = builder.viewController()
         } else {
             let builder = AuthBuilder()
             firstViewController = builder.viewController()

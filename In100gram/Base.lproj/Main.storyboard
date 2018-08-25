@@ -21,7 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4g-qN-sGE">
                                 <rect key="frame" x="100" y="323" width="175" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.92023558937823835" green="0.1027890683722527" blue="0.10659849581176065" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -39,7 +39,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="134"/>
+            <point key="canvasLocation" x="1758" y="122"/>
+        </scene>
+        <!--User View Controller iPad-->
+        <scene sceneID="Zv2-0h-217">
+            <objects>
+                <viewController storyboardIdentifier="UserViewControllerIPad" id="sNN-dn-mZE" customClass="UserViewControllerIPad" customModule="In100gram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fs7-2Y-Vp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-ml-PhW">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10666671106780397" green="0.92023558937823835" blue="0.098066798712496836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y2u-ml-PhW" firstAttribute="centerY" secondItem="fs7-2Y-Vp3" secondAttribute="centerY" id="90I-BY-Iuv"/>
+                            <constraint firstItem="Y2u-ml-PhW" firstAttribute="centerX" secondItem="fs7-2Y-Vp3" secondAttribute="centerX" id="dTC-6d-UmZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ejr-Pb-QtG"/>
+                    </view>
+                    <connections>
+                        <outlet property="userNameLabel" destination="Y2u-ml-PhW" id="vmA-cC-SV4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATT-lo-bgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2471" y="122"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="JX5-QQ-ciy">
@@ -73,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3A-1s-qTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="812" y="122"/>
         </scene>
     </scenes>
 </document>

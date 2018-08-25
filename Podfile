@@ -7,5 +7,6 @@ target 'In100gram' do
 
   # Pods for In100gram
   pod 'Locksmith'
+  pod 'Alamofire', '~> 4.7'
 
 end

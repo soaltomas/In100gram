@@ -14,10 +14,17 @@
 		C31DFCEB21298709008DC572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31DFCEA21298709008DC572 /* Assets.xcassets */; };
 		C31DFCEE21298709008DC572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31DFCEC21298709008DC572 /* LaunchScreen.storyboard */; };
 		C31DFCF8212C1ABE008DC572 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DFCF7212C1ABE008DC572 /* User.swift */; };
+		C3B043A6212C6A1200315015 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043A5212C6A1200315015 /* RequestRouter.swift */; };
+		C3B043A9212C6C0A00315015 /* AbstractRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043A8212C6C0A00315015 /* AbstractRequestFactory.swift */; };
+		C3B043AB212E983300315015 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043AA212E983300315015 /* RequestFactory.swift */; };
+		C3B043AE212EDF0E00315015 /* AuthRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043AD212EDF0E00315015 /* AuthRequestFactory.swift */; };
+		C3B043B0212EF66A00315015 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043AF212EF66A00315015 /* LoginRequest.swift */; };
+		C3B043B2212EF86200315015 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043B1212EF86200315015 /* RequestModel.swift */; };
+		C3B043B4212F53BC00315015 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B043B3212F53BC00315015 /* LoginResponse.swift */; };
 		C3B147CB212C22910073972C /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147CA212C22910073972C /* Credential.swift */; };
-		C3B147CE212C2A650073972C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147CD212C2A650073972C /* APIManager.swift */; };
 		C3B147D1212C304B0073972C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147D0212C304B0073972C /* AuthViewController.swift */; };
 		C3B147D3212C325A0073972C /* AuthViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147D2212C325A0073972C /* AuthViewControllerDelegate.swift */; };
+		C3B147D7212C677B0073972C /* SessionManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B147D6212C677B0073972C /* SessionManagerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +38,17 @@
 		C31DFCED21298709008DC572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31DFCEF21298709008DC572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31DFCF7212C1ABE008DC572 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C3B043A5212C6A1200315015 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		C3B043A8212C6C0A00315015 /* AbstractRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractRequestFactory.swift; sourceTree = "<group>"; };
+		C3B043AA212E983300315015 /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		C3B043AD212EDF0E00315015 /* AuthRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestFactory.swift; sourceTree = "<group>"; };
+		C3B043AF212EF66A00315015 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		C3B043B1212EF86200315015 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		C3B043B3212F53BC00315015 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		C3B147CA212C22910073972C /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
-		C3B147CD212C2A650073972C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		C3B147D0212C304B0073972C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		C3B147D2212C325A0073972C /* AuthViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerDelegate.swift; sourceTree = "<group>"; };
+		C3B147D6212C677B0073972C /* SessionManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerFactory.swift; sourceTree = "<group>"; };
 		CB568D2805C2B396160BADB7 /* Pods_In100gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_In100gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,7 +94,7 @@
 		C31DFCE221298708008DC572 /* In100gram */ = {
 			isa = PBXGroup;
 			children = (
-				C3B147CC212C2A540073972C /* API */,
+				C3B147D4212C67310073972C /* Core */,
 				C3B147C9212C22800073972C /* Utils */,
 				C31DFCF5212C1AA1008DC572 /* App */,
 				C31DFCE321298708008DC572 /* AppDelegate.swift */,
@@ -105,8 +119,30 @@
 			isa = PBXGroup;
 			children = (
 				C31DFCF7212C1ABE008DC572 /* User.swift */,
+				C3B043AF212EF66A00315015 /* LoginRequest.swift */,
+				C3B043B1212EF86200315015 /* RequestModel.swift */,
+				C3B043B3212F53BC00315015 /* LoginResponse.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		C3B043A7212C6B2500315015 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				C3B043AC212EDEF900315015 /* Authorization */,
+				C3B043A5212C6A1200315015 /* RequestRouter.swift */,
+				C3B043A8212C6C0A00315015 /* AbstractRequestFactory.swift */,
+				C3B043AA212E983300315015 /* RequestFactory.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		C3B043AC212EDEF900315015 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				C3B043AD212EDF0E00315015 /* AuthRequestFactory.swift */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 		C3B147C9212C22800073972C /* Utils */ = {
@@ -117,14 +153,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		C3B147CC212C2A540073972C /* API */ = {
-			isa = PBXGroup;
-			children = (
-				C3B147CD212C2A650073972C /* APIManager.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		C3B147CF212C302B0073972C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +161,23 @@
 				C3B147D2212C325A0073972C /* AuthViewControllerDelegate.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3B147D4212C67310073972C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C3B147D5212C67600073972C /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C3B147D5212C67600073972C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C3B043A7212C6B2500315015 /* Requests */,
+				C3B147D6212C677B0073972C /* SessionManagerFactory.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		C3DD4FD5EAEDD6B50E8192BC /* Frameworks */ = {
@@ -237,10 +282,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-In100gram/Pods-In100gram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Locksmith.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,13 +302,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B043AB212E983300315015 /* RequestFactory.swift in Sources */,
+				C3B043A9212C6C0A00315015 /* AbstractRequestFactory.swift in Sources */,
+				C3B043AE212EDF0E00315015 /* AuthRequestFactory.swift in Sources */,
 				C31DFCE621298708008DC572 /* MainViewController.swift in Sources */,
+				C3B043B4212F53BC00315015 /* LoginResponse.swift in Sources */,
 				C31DFCE421298708008DC572 /* AppDelegate.swift in Sources */,
-				C3B147CE212C2A650073972C /* APIManager.swift in Sources */,
 				C3B147CB212C22910073972C /* Credential.swift in Sources */,
 				C3B147D1212C304B0073972C /* AuthViewController.swift in Sources */,
+				C3B147D7212C677B0073972C /* SessionManagerFactory.swift in Sources */,
 				C3B147D3212C325A0073972C /* AuthViewControllerDelegate.swift in Sources */,
+				C3B043B0212EF66A00315015 /* LoginRequest.swift in Sources */,
+				C3B043B2212EF86200315015 /* RequestModel.swift in Sources */,
 				C31DFCF8212C1ABE008DC572 /* User.swift in Sources */,
+				C3B043A6212C6A1200315015 /* RequestRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
